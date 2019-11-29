@@ -1,0 +1,287 @@
+Execution Stack : 
+Ref(int)  v
+new( v, Value: 20 )
+print(rH( v) )
+wH( v, Value: 30) 
+print(( rH( v)  + Value: 5 ))
+
+Symbol Table: 
+
+Output List: 
+
+File Table: 
+
+Heap: 
+
+Execution Stack : 
+new( v, Value: 20 )
+print(rH( v) )
+wH( v, Value: 30) 
+print(( rH( v)  + Value: 5 ))
+
+Symbol Table: 
+v -> ( 0 , int )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+
+Execution Stack : 
+new( v, Value: 20 )
+print(rH( v) )
+wH( v, Value: 30) 
+print(( rH( v)  + Value: 5 ))
+
+Symbol Table: 
+v -> ( 0 , int )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+
+Execution Stack : 
+print(rH( v) )
+wH( v, Value: 30) 
+print(( rH( v)  + Value: 5 ))
+
+Symbol Table: 
+v -> ( 1 , Ref(int) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+1 -> Value: 20
+
+Execution Stack : 
+print(rH( v) )
+wH( v, Value: 30) 
+print(( rH( v)  + Value: 5 ))
+
+Symbol Table: 
+v -> ( 1 , Ref(int) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+1 -> Value: 20
+
+Execution Stack : 
+wH( v, Value: 30) 
+print(( rH( v)  + Value: 5 ))
+
+Symbol Table: 
+v -> ( 1 , Ref(int) )
+
+Output List: 
+Value: 20 | 
+File Table: 
+
+Heap: 
+1 -> Value: 20
+
+Execution Stack : 
+wH( v, Value: 30) 
+print(( rH( v)  + Value: 5 ))
+
+Symbol Table: 
+v -> ( 1 , Ref(int) )
+
+Output List: 
+Value: 20 | 
+File Table: 
+
+Heap: 
+1 -> Value: 20
+
+Execution Stack : 
+print(( rH( v)  + Value: 5 ))
+
+Symbol Table: 
+v -> ( 1 , Ref(int) )
+
+Output List: 
+Value: 20 | 
+File Table: 
+
+Heap: 
+1 -> Value: 30
+
+Execution Stack : 
+
+Symbol Table: 
+v -> ( 1 , Ref(int) )
+
+Output List: 
+Value: 20 | Value: 35 | 
+File Table: 
+
+Heap: 
+1 -> Value: 30
+
+Execution Stack : 
+Ref(int)  v
+new( v, Value: 20 )
+Ref(Ref(int))  a
+new( a, v )
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+
+Output List: 
+
+File Table: 
+
+Heap: 
+
+Execution Stack : 
+new( v, Value: 20 )
+Ref(Ref(int))  a
+new( a, v )
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+v -> ( 0 , int )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+
+Execution Stack : 
+new( v, Value: 20 )
+Ref(Ref(int))  a
+new( a, v )
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+v -> ( 0 , int )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+
+Execution Stack : 
+Ref(Ref(int))  a
+new( a, v )
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+v -> ( 1 , Ref(int) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+1 -> Value: 20
+
+Execution Stack : 
+Ref(Ref(int))  a
+new( a, v )
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+v -> ( 1 , Ref(int) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+1 -> Value: 20
+
+Execution Stack : 
+new( a, v )
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+a -> ( 0 , Ref(int) )
+v -> ( 1 , Ref(int) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+1 -> Value: 20
+
+Execution Stack : 
+new( a, v )
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+a -> ( 0 , Ref(int) )
+v -> ( 1 , Ref(int) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+1 -> Value: 20
+
+Execution Stack : 
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+a -> ( 2 , Ref(Ref(int)) )
+v -> ( 1 , Ref(int) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+1 -> Value: 20
+2 -> ( 1 , Ref(int) )
+
+Execution Stack : 
+new( v, Value: 30 )
+print(rH( rH( a) ) )
+
+Symbol Table: 
+a -> ( 2 , Ref(Ref(int)) )
+v -> ( 1 , Ref(int) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+1 -> Value: 20
+2 -> ( 1 , Ref(int) )
+
+Execution Stack : 
+print(rH( rH( a) ) )
+
+Symbol Table: 
+a -> ( 2 , Ref(Ref(int)) )
+v -> ( 3 , Ref(Ref(int)) )
+
+Output List: 
+
+File Table: 
+
+Heap: 
+2 -> ( 1 , Ref(int) )
+3 -> Value: 30
+
